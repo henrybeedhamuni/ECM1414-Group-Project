@@ -13,5 +13,6 @@
 ## Boran
 
 - Make Brute force implemenation in `brute_force.py`
+- Write about how brute-force works and make psedocode
 
 ## Theo
