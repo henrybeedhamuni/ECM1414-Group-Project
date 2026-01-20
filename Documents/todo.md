@@ -26,6 +26,9 @@ Essentially documentation, design, and theory
 - Help Howard with presentation
 - Help Howard with Documentation
 
+##Steve
+- Extensions
+
 ## Undivided
 - Readme
 - Pytest 
