@@ -10,7 +10,8 @@ def final_output(input_file,time,budget):
     # Brute Force Output
     Print("--- BRUTE FORCE ALGORITHM ---")
     Print("Selected Activities:")
-        # Output the list of activities from the brute force algorithm
+        # call and run the algorithm
+        # Output:
         # the list of activities from the brute force algorithm
         # TOTAL ENJOYMENT
         # TOTAL TIME USED:
@@ -20,7 +21,8 @@ def final_output(input_file,time,budget):
     # Dynamic Porgramming Output
     Print("--- DYNAMIC PROGRAMMING ALGORITHM ---")
     Print("Selected Activities:")
-        # Output
+        # call and run the algorithm
+        # Output:
         # the list of activities from the brute force algorithm
         # TOTAL ENJOYMENT
         # TOTAL COST
