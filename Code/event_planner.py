@@ -1,7 +1,7 @@
 import sys
 from typing import List, Tuple
 # --- Import your brute_force and dynamic programming modules here when implemented. Uncomment the lines below:
-# from brute_force import brute_force_planner
+from brute_force import brute_force_planner
 # from dynamic import dp_planner
 
 class Activity:
@@ -44,13 +44,13 @@ def read_input_file(filename: str) -> Tuple[List[Activity], int, int]:
       
 def main():
   # Read filename from command line argument (e.g. python Code/event_planner.py ./Input_Files/input_small.txt)
-  filename = sys.argv[1] if len(sys.argv) > 1 else './Input_Files/input_small.txt'
+  filename = sys.argv[1] if len(sys.argv) > 1 else '../Input_Files/input_small.txt'
   activities, max_duration, max_budget = read_input_file(filename)
   
   # Use brute-force or dynamic programming planner here
   # --- Begin brute force usage
-  
-  
+  bf_output = brute_force_planner(activities,max_duration,max_budget)
+  print(bf_output)
   
   # --- End of brute force usage
   
