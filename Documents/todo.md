@@ -24,7 +24,7 @@
 
 ## Theo
 
-- Help collaborate for brute force with Boran
+- ✅ Help collaborate for brute force with Boran
 - Help Howard with presentation
 - Help Howard with Documentation
 
