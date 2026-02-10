@@ -1,0 +1,20 @@
+pseudocode for brute_force algorithm
+
+n = number of activites
+ids = [0, 1, …,n-1]
+cheapest cost = minimum activity.cost over activites
+max_length = min(n, floor(budget /cheapest_cost))
+best_solution = {combination: [], cost: 0, time: 0, enjoyment:0}
+
+For length from max_length down to 2:
+	for each combination of ids of size length:
+		set cost = 0, time = 0, enjoyment = 0
+		for each i combination:
+			cost += activities[i].cost
+			time += activities[i].duration
+			enjoyment += activities[i].enjoyment_level
+			if cost >= budget or time >= max_time:
+				break out from the inner loop(skip this combination)
+		if cost <= budget or time <= max_time and enjoyment > best_solution.enjoyment:
+			update best_solution with current combination, cost, time, enjoyment
+return best_solution
