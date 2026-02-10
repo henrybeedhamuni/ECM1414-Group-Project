@@ -44,7 +44,7 @@ def read_input_file(filename: str) -> Tuple[List[Activity], int, int]:
       
 def main():
   # Read filename from command line argument (e.g. python Code/event_planner.py ./Input_Files/input_small.txt)
-  filename = sys.argv[1] if len(sys.argv) > 1 else '../Input_Files/input_small.txt'
+  filename = sys.argv[1] if len(sys.argv) > 1 else './Input_Files/input_small.txt'
   activities, max_duration, max_budget = read_input_file(filename)
   
   # Use brute-force or dynamic programming planner here
@@ -62,7 +62,7 @@ def main():
   # --- End of dynamic programming usage
   
   # Print read activities and constraints
-  print(f"Max Duration: {max_duration} hours, Max Budget: £{max_budget}")
+  print(f"\nMax Duration: {max_duration} hours, Max Budget: £{max_budget}")
   for activity in activities:
     print(activity)
 
