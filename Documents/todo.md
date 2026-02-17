@@ -19,14 +19,15 @@
 
 ## Boran
 
-- Make Brute force implemenation in `brute_force.py` (In colaboration with Theo)
-- Write about how brute-force works and make psedocode
+- ✅ Make Brute force implemenation in `brute_force.py` (In colaboration with Theo)
+- ✅ Write about how brute-force works and make psedocode
 
 ## Theo
 
 - ✅ Help collaborate for brute force with Boran
 - Help Howard with presentation
 - Help Howard with Documentation
+- ✅Completed Enhanced Brute Force(Dual Constraints)
 
 ## Steve
 
