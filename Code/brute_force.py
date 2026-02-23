@@ -29,9 +29,8 @@ def brute_force_planner(activities,max_time,budget):
                 cost += activities[activity].cost
                 time += activities[activity].duration
                 enjoyment += activities[activity].enjoyment_level
-            if cost <= budget : #checking budget constraint
-                if enjoyment >= best_solution[3]: #if the new enjoyment is greater than the current best enjoyment overwrite it with the new solution
-                    best_solution = [solution,cost,time,enjoyment] # Combination, cost, time, enjoyment
+            if cost <= budget and enjoyment >= best_solution[3]: #checking budget constraint, if the new enjoyment is greater than the current best enjoyment overwrite it with the new solution
+                best_solution = [solution,cost,time,enjoyment] # Combination, cost, time, enjoyment
 
     return(best_solution) #returning the best solution found
 

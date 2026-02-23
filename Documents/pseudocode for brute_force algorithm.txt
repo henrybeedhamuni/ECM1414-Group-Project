@@ -1,21 +1,25 @@
 pseudocode for brute_force algorithm
 
-n = number of activites
-ids = [0, 1, …,n-1]
-cheapest cost = minimum activity.cost over activites
-max_length = min(n, floor(budget /cheapest_cost))
-best_solution = {combination: [], cost: 0, time: 0, enjoyment:0}
+Function brute_force_planner(activities, max_time, budget):
 
-For length from max_length down to 2:
-	for each combination of ids of size length:
-		set cost = 0, time = 0, enjoyment = 0
-		for each i combination:
-			cost += activities[i].cost
-			time += activities[i].duration
-			enjoyment += activities[i].enjoyment_level
-			if cost >= budget:
-				break out from the inner loop(skip this combination)
-		if cost <= budget and enjoyment > best_solution.enjoyment:
-			update best_solution with current combination, cost, time, enjoyment
-return best_solution
+	n = number of activities
+	ids = [0, 1, …,n-1]
+	cheapest cost = minimum activity.cost
+	max_length = budget div cheapest_cost
+	if max_length > n then
+		max_length = number of activities
 
+	best_solution = [0 , 0, 0, 0] #empty array of zeros
+
+	for length in the range of max_length to 1:
+		for each combination of ids of size length:
+			set cost = 0, time = 0, enjoyment = 0
+			for each i combination:
+				cost += activities[i].cost
+				time += activities[i].duration
+				enjoyment += activities[i].enjoyment_level
+				if cost <= budget and enjoyment > best_solution[3]:
+					best_solution = [combination, cost, time, enjoyment]
+	return best_solution
+
+End function
