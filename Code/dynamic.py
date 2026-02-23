@@ -63,6 +63,6 @@ def dp_planner(activities, max_time, budget):
     total_time = sum(activities[idx].duration for idx in selected_ids)
     total_enjoyment = sum(activities[idx].enjoyment_level for idx in selected_ids)
     
-    best_solution = [[selected_ids], [total_cost], [total_time], [total_enjoyment]]
+    best_solution = [selected_ids, total_cost, total_time, total_enjoyment]
 
     return best_solution

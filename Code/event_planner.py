@@ -4,9 +4,9 @@ from typing import List, Tuple
 import time
 # --- Import your brute_force and dynamic programming modules here when implemented. Uncomment the lines below:
 from brute_force import brute_force_planner
-from dynamic import dp_planner
 from enhanced_brute_force import enhanced_brute_force_planner
 # from dynamic import dp_planner
+from dynamic import dp_planner
 
 class Activity:
   """Represents a single activity/event"""
@@ -66,17 +66,17 @@ def main():
   
   
   # --- Begin dynamic programming usage
-  start_time = time.time()
+  start = time.time()
   dp_output = dp_planner(activities, max_duration, max_budget)
-  end_time = time.time()
-  print(f"Dynamic programming took {end_time - start_time:.4f} seconds")
-  print(dp_output)
+  end = time.time()
+  dp_output.append("{:.6f}".format(end-start))
+
   
   
   
   # --- End of dynamic programming usage
   
-  solutions = [bf_output,bf_output_e]
+  solutions = [bf_output,bf_output_e,dp_output]
   # Print read activities and constraints
   # returns[[solution],[cost],[time],[enjoyment],[execution time]]
   print("========================================")
@@ -99,6 +99,13 @@ def main():
       print(f"  {activities[index]}")
   print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][1]} hours\nTotal Cost: £{solutions[1][2]}")
   print(f"\nExecution Time: {solutions[1][4]} Seconds")
+
+  print("\n\n --- Standard Dynamic Programming Algorithm --- ")
+  print("Selected Acivities: ")
+  for index in solutions[2][0]:
+      print(f"  {activities[index]}")
+  print(f"Total Enjoyment: {solutions[2][3]}\nTotal Time Used: {solutions[2][1]} hours\nTotal Cost: £{solutions[2][2]}")
+  print(f"\nExecution Time: {solutions[2][4]} Seconds")
 
 if __name__ == "__main__":
   main()
