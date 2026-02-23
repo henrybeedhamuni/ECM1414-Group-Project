@@ -19,7 +19,7 @@ def enhanced_brute_force_planner(activities,max_time,budget):
     best_solution = [0,0,0,0] # Combination, cost, time, enjoyment
 
     # run the combinations alorithm
-    for length in range(max_length,1,-1): #iterating from max length combinations to 1 length
+    for length in range(max_length,-1,-1): #iterating from max length combinations to 1 length
         possible_solutions = combinations(ids,length) #tuple of all combinations of current length
         for solution in possible_solutions: #testing each solution in the tuple of combinations
             cost = 0

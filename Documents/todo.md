@@ -15,7 +15,7 @@
 - ✅ Input files
 - Get input files importing into python
 - Write about how dynamic works and make pseodocode
-- Make dynamic programming implementation in `dynamic.py`
+- ✅ Make dynamic programming implementation in `dynamic.py`
 
 ## Boran
 
@@ -25,8 +25,8 @@
 ## Theo
 
 - ✅ Help collaborate for brute force with Boran
-- Help Howard with presentation
-- Help Howard with Documentation
+- ✅Help Howard with presentation
+- ✅ Help Howard with Documentation
 - ✅Completed Enhanced Brute Force(Dual Constraints)
 
 ## Steve

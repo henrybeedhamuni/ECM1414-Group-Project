@@ -87,24 +87,24 @@ def main():
   print(f"Available Budget: £{max_budget}")
 
   print(" --- Standard Brute Force Algorithm --- ")
-  print("Selected Acivities: ")
+  print("Selected Activities: ")
   for index in solutions[0][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[0][3]}\nTotal Time Used: {solutions[0][1]} hours\nTotal Cost: £{solutions[0][2]}")
+  print(f"Total Enjoyment: {solutions[0][3]}\nTotal Time Used: {solutions[0][2]} hours\nTotal Cost: £{solutions[0][1]}")
   print(f"\nExecution Time: {solutions[0][4]} Seconds")
 
   print("\n\n --- Enhanced Brute Force Algorithm --- ")
-  print("Selected Acivities: ")
+  print("Selected Activities: ")
   for index in solutions[1][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][1]} hours\nTotal Cost: £{solutions[1][2]}")
+  print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][2]} hours\nTotal Cost: £{solutions[1][1]}")
   print(f"\nExecution Time: {solutions[1][4]} Seconds")
 
   print("\n\n --- Standard Dynamic Programming Algorithm --- ")
-  print("Selected Acivities: ")
+  print("Selected Activities: ")
   for index in solutions[2][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[2][3]}\nTotal Time Used: {solutions[2][1]} hours\nTotal Cost: £{solutions[2][2]}")
+  print(f"Total Enjoyment: {solutions[2][3]}\nTotal Time Used: {solutions[2][2]} hours\nTotal Cost: £{solutions[2][1]}")
   print(f"\nExecution Time: {solutions[2][4]} Seconds")
 
 if __name__ == "__main__":

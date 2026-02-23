@@ -11,7 +11,7 @@ Function brute_force_planner(activities, max_time, budget):
 
 	best_solution = [0 , 0, 0, 0] #empty array of zeros
 
-	for length in the range of max_length to 1:
+	for length in the range of max_length to 0:
 		for each combination of ids of size length:
 			set cost = 0, time = 0, enjoyment = 0
 			for each i combination:

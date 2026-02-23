@@ -1,0 +1,47 @@
+solutions processed bf: 33554432
+solutions processed bfe: 33554432
+========================================
+EVENT PLANNER - RESULTS
+========================================
+Input File: ../Input_Files/input_large.txt
+Available Time: 20 Hours
+Available Budget: £500
+ --- Standard Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Orientation-Walk, Duration: 1 hours, Cost: £10, Enjoyment Level: 30
+  Activity: Ice-Breaker-Games, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
+  Activity: Movie-Marathon, Duration: 5 hours, Cost: £60, Enjoyment Level: 140
+  Activity: Charity-Run, Duration: 3 hours, Cost: £15, Enjoyment Level: 70
+  Activity: Trivia-Night, Duration: 2 hours, Cost: £30, Enjoyment Level: 65
+  Activity: Campus-Scavenger-Hunt, Duration: 3 hours, Cost: £25, Enjoyment Level: 75
+  Activity: Photography-Walk, Duration: 3 hours, Cost: £40, Enjoyment Level: 85
+  Activity: Poetry-Slam, Duration: 2 hours, Cost: £20, Enjoyment Level: 55
+  Activity: Outdoor-Cinema, Duration: 4 hours, Cost: £70, Enjoyment Level: 115
+  Activity: Board-Game-Cafe, Duration: 3 hours, Cost: £45, Enjoyment Level: 80
+  Activity: Volunteering-Event, Duration: 4 hours, Cost: £10, Enjoyment Level: 60
+  Activity: Yoga-Session, Duration: 2 hours, Cost: £35, Enjoyment Level: 70
+  Activity: Park-Picnic, Duration: 3 hours, Cost: £30, Enjoyment Level: 65
+  Activity: Stargazing-Trip, Duration: 4 hours, Cost: £50, Enjoyment Level: 100
+  Activity: Crafts-Fair, Duration: 2 hours, Cost: £40, Enjoyment Level: 75
+Total Enjoyment: 1135
+Total Time Used: 43 hours
+Total Cost: £500
+
+Execution Time: 18.098908 Seconds
+
+
+ --- Enhanced Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Trivia-Night, Duration: 2 hours, Cost: £30, Enjoyment Level: 65
+  Activity: Wine-Tasting, Duration: 2 hours, Cost: £100, Enjoyment Level: 150
+  Activity: Rock-Climbing, Duration: 4 hours, Cost: £110, Enjoyment Level: 160
+  Activity: Dance-Workshop, Duration: 2 hours, Cost: £50, Enjoyment Level: 90
+  Activity: Baking-Competition, Duration: 3 hours, Cost: £55, Enjoyment Level: 95
+  Activity: Comedy-Show, Duration: 3 hours, Cost: £80, Enjoyment Level: 135
+  Activity: Yoga-Session, Duration: 2 hours, Cost: £35, Enjoyment Level: 70
+  Activity: Crafts-Fair, Duration: 2 hours, Cost: £40, Enjoyment Level: 75
+Total Enjoyment: 840
+Total Time Used: 20 hours
+Total Cost: £500
+
+Execution Time: 17.980130 Seconds

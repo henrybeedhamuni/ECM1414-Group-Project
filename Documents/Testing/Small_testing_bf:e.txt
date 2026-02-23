@@ -1,0 +1,31 @@
+solutions processed bf: 32
+solutions processed bfe: 32
+========================================
+EVENT PLANNER - RESULTS
+========================================
+Input File: ../Input_Files/input_small.txt
+Available Time: 10 Hours
+Available Budget: £200
+ --- Standard Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Campus-Tour, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
+  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+Total Enjoyment: 410
+Total Time Used: 12 hours
+Total Cost: £190
+
+Execution Time: 0.000025 Seconds
+
+
+ --- Enhanced Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+Total Enjoyment: 360
+Total Time Used: 10 hours
+Total Cost: £170
+
+Execution Time: 0.000013 Seconds

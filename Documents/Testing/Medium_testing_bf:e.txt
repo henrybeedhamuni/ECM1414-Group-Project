@@ -1,0 +1,37 @@
+solutions processed bf: 4096
+solutions processed bfe: 4096
+========================================
+EVENT PLANNER - RESULTS
+========================================
+Input File: ../Input_Files/input_medium.txt
+Available Time: 15 Hours
+Available Budget: £300
+ --- Standard Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Welcome-BBQ, Duration: 3 hours, Cost: £50, Enjoyment Level: 80
+  Activity: Karaoke-Night, Duration: 2 hours, Cost: £40, Enjoyment Level: 70
+  Activity: Film-Screening, Duration: 3 hours, Cost: £30, Enjoyment Level: 90
+  Activity: Sports-Tournament, Duration: 4 hours, Cost: £60, Enjoyment Level: 110
+  Activity: Pub-Quiz, Duration: 2 hours, Cost: £25, Enjoyment Level: 60
+  Activity: Cooking-Class, Duration: 3 hours, Cost: £75, Enjoyment Level: 105
+  Activity: Open-Mic, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
+Total Enjoyment: 565
+Total Time Used: 19 hours
+Total Cost: £300
+
+Execution Time: 0.001094 Seconds
+
+
+ --- Enhanced Brute Force Algorithm --- 
+Selected Activities: 
+  Activity: Film-Screening, Duration: 3 hours, Cost: £30, Enjoyment Level: 90
+  Activity: Sports-Tournament, Duration: 4 hours, Cost: £60, Enjoyment Level: 110
+  Activity: Art-Workshop, Duration: 2 hours, Cost: £70, Enjoyment Level: 95
+  Activity: Pub-Quiz, Duration: 2 hours, Cost: £25, Enjoyment Level: 60
+  Activity: Laser-Tag, Duration: 2 hours, Cost: £90, Enjoyment Level: 130
+  Activity: Open-Mic, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
+Total Enjoyment: 535
+Total Time Used: 15 hours
+Total Cost: £295
+
+Execution Time: 0.001128 Seconds
