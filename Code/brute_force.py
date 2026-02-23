@@ -1,5 +1,5 @@
 from itertools import combinations
-
+import numpy as np
 def brute_force_planner(activities,max_time,budget):
 
     # assign id's to each activity (integer 0-num of activities)
@@ -16,7 +16,7 @@ def brute_force_planner(activities,max_time,budget):
     if max_length > len(activities): #if max length is longer than the number of activities reduce the ceiling to the number of activities
         max_length = len(activities)
 
-    best_solution = [[0],[0],[0],[0]] # Combination, cost, time, enjoyment
+    best_solution = [0,0,0,0] # Combination, cost, time, enjoyment
 
     # run the combinations alorithm
     for length in range(max_length,1,-1): #iterating from max length combinations to 1 length
@@ -30,8 +30,8 @@ def brute_force_planner(activities,max_time,budget):
                 time += activities[activity].duration
                 enjoyment += activities[activity].enjoyment_level
             if cost <= budget : #checking budget constraint
-                if enjoyment >= best_solution[3][0]: #if the new enjoyment is greater than the current best enjoyment overwrite it with the new solution
-                    best_solution = [[solution],[cost],[time],[enjoyment]]
+                if enjoyment >= best_solution[3]: #if the new enjoyment is greater than the current best enjoyment overwrite it with the new solution
+                    best_solution = [solution,cost,time,enjoyment] # Combination, cost, time, enjoyment
 
     return(best_solution) #returning the best solution found
 

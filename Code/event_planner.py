@@ -1,7 +1,9 @@
 import sys
 from typing import List, Tuple
+import time
 # --- Import your brute_force and dynamic programming modules here when implemented. Uncomment the lines below:
 from brute_force import brute_force_planner
+from enhanced_brute_force import enhanced_brute_force_planner
 # from dynamic import dp_planner
 
 class Activity:
@@ -44,14 +46,20 @@ def read_input_file(filename: str) -> Tuple[List[Activity], int, int]:
       
 def main():
   # Read filename from command line argument (e.g. python Code/event_planner.py ./Input_Files/input_small.txt)
-  filename = sys.argv[1] if len(sys.argv) > 1 else './Input_Files/input_small.txt'
+  filename = sys.argv[1] if len(sys.argv) > 1 else '../Input_Files/input_small.txt'
   activities, max_duration, max_budget = read_input_file(filename)
   
   # Use brute-force or dynamic programming planner here
   # --- Begin brute force usage
+  start = time.time()
   bf_output = brute_force_planner(activities,max_duration,max_budget)
-  print(bf_output)
-  
+  end = time.time()
+  bf_output.append("{:.6f}".format(end-start))
+
+  start = time.time()
+  bf_output_e = enhanced_brute_force_planner(activities,max_duration,max_budget)
+  end = time.time()
+  bf_output_e.append("{:.6f}".format(end-start))
   # --- End of brute force usage
   
   
@@ -61,10 +69,29 @@ def main():
   
   # --- End of dynamic programming usage
   
+  solutions = [bf_output,bf_output_e]
   # Print read activities and constraints
-  print(f"\nMax Duration: {max_duration} hours, Max Budget: £{max_budget}")
-  for activity in activities:
-    print(activity)
+  # returns[[solution],[cost],[time],[enjoyment],[execution time]]
+  print("========================================")
+  print("EVENT PLANNER - RESULTS")
+  print("========================================")
+  print(f"Input File: {filename}")
+  print(f"Available Time: {max_duration} Hours")
+  print(f"Available Budget: £{max_budget}")
+
+  print(" --- Standard Brute Force Algorithm --- ")
+  print("Selected Acivities: ")
+  for index in solutions[0][0]:
+      print(f"  {activities[index]}")
+  print(f"Total Enjoyment: {solutions[0][3]}\nTotal Time Used: {solutions[0][1]} hours\nTotal Cost: £{solutions[0][2]}")
+  print(f"\nExecution Time: {solutions[0][4]} Seconds")
+
+  print("\n\n --- Enhanced Brute Force Algorithm --- ")
+  print("Selected Acivities: ")
+  for index in solutions[1][0]:
+      print(f"  {activities[index]}")
+  print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][1]} hours\nTotal Cost: £{solutions[1][2]}")
+  print(f"\nExecution Time: {solutions[1][4]} Seconds")
 
 if __name__ == "__main__":
   main()
