@@ -1,7 +1,9 @@
 import sys
+import time
 from typing import List, Tuple
 # --- Import your brute_force and dynamic programming modules here when implemented. Uncomment the lines below:
 from brute_force import brute_force_planner
+from dynamic import dp_planner
 # from dynamic import dp_planner
 
 class Activity:
@@ -49,13 +51,23 @@ def main():
   
   # Use brute-force or dynamic programming planner here
   # --- Begin brute force usage
+  # Time how long it takes
+  
+  start_time = time.time()
   bf_output = brute_force_planner(activities,max_duration,max_budget)
+  end_time = time.time()
+  print(f"Brute force took {end_time - start_time:.4f} seconds")
   print(bf_output)
   
   # --- End of brute force usage
   
   
   # --- Begin dynamic programming usage
+  start_time = time.time()
+  dp_output = dp_planner(activities, max_duration, max_budget)
+  end_time = time.time()
+  print(f"Dynamic programming took {end_time - start_time:.4f} seconds")
+  print(dp_output)
   
   
   
