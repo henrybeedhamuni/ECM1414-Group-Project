@@ -1,3 +1,7 @@
+from typing import List, Tuple
+
+from Classes.Activity import Activity
+
 def read_input_file(filename: str) -> Tuple[List[Activity], int, int]:
   """Read csv file of input activities and constraints"""
   try:
