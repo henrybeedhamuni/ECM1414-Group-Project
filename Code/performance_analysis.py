@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from brute_force import brute_force_planner
 from enhanced_brute_force import enhanced_brute_force_planner
-# from dynamic import dp_planner
 from dynamic import dp_planner
 from greedy_heuristic import greedy_heuristic
 from event_planner import read_input_file
