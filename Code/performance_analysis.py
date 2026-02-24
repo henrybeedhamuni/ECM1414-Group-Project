@@ -198,19 +198,19 @@ def performance_analysis_enjoyment():
 
         # Get total enjoyment
         value = brute_force_planner(activities,max_duration,max_budget)
-
+        print(f"Brute force {filename} completed")
         # Append to array
         brute_force_values.append(value[3])
 
         # Get total enjoyment
         value = dp_planner(activities,max_duration,max_budget)
-
+        print(f"Dynamic {filename} completed")
         # Append to array
         dynamic_values.append(value[3])
 
         # Get total enjoyment
         value = greedy_heuristic(activities,max_duration,max_budget)
-
+        print(f"Heuristic {filename} completed")
         # Append to array
         heuristic_values.append(value[3])
 
@@ -248,12 +248,14 @@ def performance_analysis_enjoyment():
 
         # Get total enjoyment
         value = dp_planner(activities,max_duration,max_budget)
+        print(f"Dynamic 2 {filename} completed")
 
         # Append to array
         dynamic_values.append(value[3])
 
         # Get total enjoyment
         value = greedy_heuristic(activities,max_duration,max_budget)
+        print(f"Heuristic 2 {filename} completed")
 
         # Append to array
         heuristic_values.append(value[3])
@@ -269,4 +271,8 @@ def performance_analysis_enjoyment():
 
     plt.show()
 
+
+# Run all the performance tests 
+performance_analysis()
 performance_analysis_heuristic()
+performance_analysis_enjoyment()
