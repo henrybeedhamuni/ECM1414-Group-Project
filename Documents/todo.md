@@ -3,11 +3,10 @@
 ## Howard
 
 - 4.4 | Explaining both algorithms, pseudocode, Comparing performance
-- 7 | Brute force: explain & evaluate, pseudocode, time complexity -> grows exponentialy ~ not coding algorithm
 - 7.2 | Dynamic programming: pseudocode and explain intuition, approach is more efficient ~ assisting on algorithm
 - 9.1 | Written Report , Testing
-- 9.4 | Presentation
-  Essentially documentation, design, and theory
+- 9.4 ✅ | Presentation
+  ✅ Essentially documentation, design, and theory
 
 ## Henry
 
@@ -31,7 +30,7 @@
 
 ## Steve
 
-- Extensions
+- ✅ Extensions
 
 ## Undivided
 
