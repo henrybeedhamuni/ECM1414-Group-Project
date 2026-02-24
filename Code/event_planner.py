@@ -22,7 +22,7 @@ from algorithms.greedy_heuristic import greedy_heuristic
       
 def main():
   # Read filename from command line argument (e.g. python Code/event_planner.py ./Input_Files/input_small.txt)
-  filename = sys.argv[1] if len(sys.argv) > 1 else '../Input_Files/input_small.txt'
+  filename = sys.argv[1] if len(sys.argv) > 1 else 'Input_Files/input_small.txt'
   activities, max_duration, max_budget = read_input_file(filename)
   
   # Use brute-force or dynamic programming planner here

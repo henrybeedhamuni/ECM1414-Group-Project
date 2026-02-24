@@ -1,4 +1,3 @@
-from time import time
 import matplotlib.pyplot as plt
 import numpy as np
 from algorithms.brute_force import brute_force_planner
@@ -6,6 +5,7 @@ from algorithms.enhanced_brute_force import enhanced_brute_force_planner
 from algorithms.dynamic import dp_planner
 from algorithms.greedy_heuristic import greedy_heuristic
 from utils.read_input_file import read_input_file
+import time
 
 def performance_analysis():
     brute_force_time = []
@@ -21,7 +21,7 @@ def performance_analysis():
 
     # Perform for each file 
     for filename in files_list:
-        activities, max_duration, max_budget = read_input_file('../Input_Files/'+filename)
+        activities, max_duration, max_budget = read_input_file('Input_Files/'+filename)
 
         # Time Brute force
         start_time = time.time()
@@ -81,7 +81,7 @@ def performance_analysis_heuristic():
 
     # Perform for each file 
     for filename in files_list:
-        activities, max_duration, max_budget = read_input_file('../Input_Files/'+filename)
+        activities, max_duration, max_budget = read_input_file('Input_Files/'+filename)
 
         # Time Brute force
         start_time = time.time()
@@ -194,7 +194,7 @@ def performance_analysis_enjoyment():
 
     # Perform for each file 
     for filename in files_list:
-        activities, max_duration, max_budget = read_input_file('../Input_Files/'+filename)
+        activities, max_duration, max_budget = read_input_file('Input_Files/'+filename)
 
         # Get total enjoyment
         value = brute_force_planner(activities,max_duration,max_budget)
