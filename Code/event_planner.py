@@ -1,7 +1,15 @@
+import os
 import sys
 import time
 from typing import List, Tuple
 import time
+
+# --- Ensure Python finds local modules ------------------------
+current_dir = os.path.dirname(os.path.abspath(__file__))
+if current_dir not in sys.path:
+    sys.path.append(current_dir)
+# --------------------------------------------------------------
+
 # --- Import your brute_force and dynamic programming modules here when implemented. Uncomment the lines below:
 from brute_force import brute_force_planner
 from enhanced_brute_force import enhanced_brute_force_planner
