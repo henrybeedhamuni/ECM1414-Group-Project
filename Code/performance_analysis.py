@@ -21,7 +21,7 @@ def performance_analysis():
 
     # Perform for each file 
     for filename in files_list:
-        activities, max_duration, max_budget = read_input_file('Input_Files/'+filename)
+        activities, max_duration, max_budget = read_input_file('../Input_Files/'+filename)
 
         # Time Brute force
         start_time = time.time()
@@ -194,7 +194,7 @@ def performance_analysis_enjoyment():
 
     # Perform for each file 
     for filename in files_list:
-        activities, max_duration, max_budget = read_input_file('Input_Files/'+filename)
+        activities, max_duration, max_budget = read_input_file('../Input_Files/'+filename)
 
         # Get total enjoyment
         value = brute_force_planner(activities,max_duration,max_budget)
@@ -269,5 +269,4 @@ def performance_analysis_enjoyment():
 
     plt.show()
 
-
-performance_analysis_enjoyment()
+performance_analysis_heuristic()
