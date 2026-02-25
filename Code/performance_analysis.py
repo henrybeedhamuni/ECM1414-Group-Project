@@ -63,7 +63,6 @@ def performance_analysis():
     barplot.set_title("How the speedup factor changes at different numbers of inputs")
 
     plt.tight_layout()
-    plt.show()
 
 def performance_analysis_heuristic():
 
@@ -175,9 +174,6 @@ def performance_analysis_heuristic():
     plot2.set_xlabel("Number of inputs")
     plot2.legend(["Dynamic", "Heuristic"], loc="upper left")
 
-
-    plt.show()
-
 def performance_analysis_enjoyment():
 
     brute_force_values = []
@@ -268,11 +264,9 @@ def performance_analysis_enjoyment():
     plot2.set_xlabel("Number of inputs")
     plot2.legend(["Dynamic", "Heuristic"], loc="upper left")
 
-
-    plt.show()
-
-
 # Run all the performance tests 
 performance_analysis()
 performance_analysis_heuristic()
 performance_analysis_enjoyment()
+plt.show()
+
