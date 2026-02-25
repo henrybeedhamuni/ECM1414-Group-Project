@@ -73,21 +73,21 @@ def main():
   print("Selected Activities: ")
   for index in solutions[0][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[0][3]}\nTotal Time Used: {solutions[0][2]} hours\nTotal Cost: £{solutions[0][1]}")
+  print(f"Total Enjoyment: {solutions[0][3]}\nTotal Time Used: {solutions[0][2]} hours out of {max_duration} hours.\nTotal Cost: £{solutions[0][1]} out of £{max_budget}")
   print(f"\nExecution Time: {solutions[0][4]} Seconds")
 
   print("\n\n --- Enhanced Brute Force Algorithm --- ")
   print("Selected Activities: ")
   for index in solutions[1][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][2]} hours\nTotal Cost: £{solutions[1][1]}")
+  print(f"Total Enjoyment: {solutions[1][3]}\nTotal Time Used: {solutions[1][2]} hours out of {max_duration} hours.\nTotal Cost: £{solutions[1][1]} out of £{max_budget}")
   print(f"\nExecution Time: {solutions[1][4]} Seconds")
 
   print("\n\n --- Standard Dynamic Programming Algorithm --- ")
   print("Selected Activities: ")
   for index in solutions[2][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[2][3]}\nTotal Time Used: {solutions[2][2]} hours\nTotal Cost: £{solutions[2][1]}")
+  print(f"Total Enjoyment: {solutions[2][3]}\nTotal Time Used: {solutions[2][2]} hours out of {max_duration} hours.\nTotal Cost: £{solutions[2][1]} out of £{max_budget}")
   print(f"\nExecution Time: {solutions[2][4]} Seconds")
   
   
@@ -95,14 +95,14 @@ def main():
   print("Selected Activities: ")
   for index in solutions[3][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[3][3]}\nTotal Time Used: {solutions[3][2]} hours\nTotal Cost: £{solutions[3][1]}")
+  print(f"Total Enjoyment: {solutions[3][3]}\nTotal Time Used: {solutions[3][2]} hours out of {max_duration} hours.\nTotal Cost: £{solutions[3][1]} out of £{max_budget}")
   print(f"\nExecution Time: {solutions[3][4]} Seconds")
 
   print("\n\n --- Greedy Heuristic Algorithm --- ")
   print("Selected Activities: ")
   for index in solutions[4][0]:
       print(f"  {activities[index]}")
-  print(f"Total Enjoyment: {solutions[4][3]}\nTotal Time Used: {solutions[4][2]} hours\nTotal Cost: £{solutions[4][1]}")
+  print(f"Total Enjoyment: {solutions[4][3]}\nTotal Time Used: {solutions[4][2]} hours out of {max_duration} hours.\nTotal Cost: £{solutions[4][1]} out of £{max_budget}")
   print(f"\nExecution Time: {solutions[4][4]} Seconds")
 if __name__ == "__main__":
   main()
