@@ -2,81 +2,86 @@
 
 ## How to run the program
 - 2 methods:
-	- Open the terminal and use this command to change the current directory 
-		`cd ~/ECM1414-Group-Project/Code` - changes current directory to code folder within submission, Path will need to be changed depending on where the submission folder is located
-	- Use the python command to run the main file in the terminal:
-		`python event_planner.py`
-	- Once complete the user will get something like this output in the terminal which uses the small.txt file as input:
-		========================================
-		EVENT PLANNER - RESULTS
-		========================================
-		Input File: ../Input_Files/input_small.txt
-		Available Time: 10 Hours
-		Available Budget: £200
-		 --- Standard Brute Force Algorithm --- 
-		Selected Activities: 
-		  Activity: Campus-Tour, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
-		  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
-		  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
-		  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
-		Total Enjoyment: 410
-		Total Time Used: 12 hours out of 10 hours.
-		Total Cost: £190 out of £200
-		
-		Execution Time: 0.000014 Seconds
-		
-		
-		 --- Enhanced Brute Force Algorithm --- 
-		
-		Selected Activities: 
-			Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
-			Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
-			Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
-		Total Enjoyment: 360
-		Total Time Used: 10 hours out of 10 hours.
-		Total Cost: £170 out of £200
-		
-		Execution Time: 0.000009 Seconds
-		
-		
-		 --- Standard Dynamic Programming Algorithm --- 
-		
-		Selected Activities: 
-		  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
-		  Activity: Museum-Trip, Duration: 4 hours, Cost: £100, Enjoyment Level: 150
-		  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
-		Total Enjoyment: 370
-		Total Time Used: 9 hours out of 10 hours.
-		Total Cost: £240 out of £200
-		
-		Execution Time: 0.000131 Seconds
-		
-		
-		 --- Enhanced Dynamic Programming Algorithm --- 
-		
-		Selected Activities: 
-		 Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
-		 Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
-		 Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
-		Total Enjoyment: 360
-		Total Time Used: 10 hours out of 10 hours.
-		Total Cost: £170 out of £200
-		  
-		Execution Time: 0.001419 Seconds
-		
-		  
-		 --- Greedy Heuristic Algorithm --- 
-		
-		Selected Activities: 
-		  Activity: Museum-Trip, Duration: 4 hours, Cost: £100, Enjoyment Level: 150
-		  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
-		Total Enjoyment: 290
-		Total Time Used: 9 hours out of 10 hours.
-		Total Cost: £130 out of £200
-		
-		Execution Time: 0.000012 Seconds
-		
-
+	- Method 1:
+		- Open the terminal and use this command to change the current directory 
+			`cd ~/ECM1414-Group-Project/Code` - changes current directory to code folder within submission, Path will need to be changed depending on where the submission folder is located
+		- Use the python command to run the main file in the terminal:
+			`python event_planner.py`
+		- Once complete the user will get something like this output in the terminal which uses the small.txt file as input:
+			========================================
+			EVENT PLANNER - RESULTS
+			========================================
+			Input File: ../Input_Files/input_small.txt
+			Available Time: 10 Hours
+			Available Budget: £200
+			 --- Standard Brute Force Algorithm --- 
+			Selected Activities: 
+			  Activity: Campus-Tour, Duration: 2 hours, Cost: £20, Enjoyment Level: 50
+			  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+			  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+			  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+			Total Enjoyment: 410
+			Total Time Used: 12 hours out of 10 hours.
+			Total Cost: £190 out of £200
+			
+			Execution Time: 0.000014 Seconds
+			
+			
+			 --- Enhanced Brute Force Algorithm --- 
+			
+			Selected Activities: 
+				Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+				Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+				Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+			Total Enjoyment: 360
+			Total Time Used: 10 hours out of 10 hours.
+			Total Cost: £170 out of £200
+			
+			Execution Time: 0.000009 Seconds
+			
+			
+			 --- Standard Dynamic Programming Algorithm --- 
+			
+			Selected Activities: 
+			  Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+			  Activity: Museum-Trip, Duration: 4 hours, Cost: £100, Enjoyment Level: 150
+			  Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+			Total Enjoyment: 370
+			Total Time Used: 9 hours out of 10 hours.
+			Total Cost: £240 out of £200
+			
+			Execution Time: 0.000131 Seconds
+			
+			
+			 --- Enhanced Dynamic Programming Algorithm --- 
+			
+			Selected Activities: 
+			 Activity: Game-Night, Duration: 3 hours, Cost: £80, Enjoyment Level: 120
+			 Activity: Pizza-Workshop, Duration: 2 hours, Cost: £60, Enjoyment Level: 100
+			 Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+			Total Enjoyment: 360
+			Total Time Used: 10 hours out of 10 hours.
+			Total Cost: £170 out of £200
+			  
+			Execution Time: 0.001419 Seconds
+			
+			  
+			 --- Greedy Heuristic Algorithm --- 
+			
+			Selected Activities: 
+			  Activity: Museum-Trip, Duration: 4 hours, Cost: £100, Enjoyment Level: 150
+			  Activity: Hiking, Duration: 5 hours, Cost: £30, Enjoyment Level: 140
+			Total Enjoyment: 290
+			Total Time Used: 9 hours out of 10 hours.
+			Total Cost: £130 out of £200
+			
+			Execution Time: 0.000012 Seconds
+			
+	- Method 2:
+		- Open VSCode, or your chosen IDE
+			- Open `event_planner.py`
+				- Run the file (`Run > Start Debugging` In the VSCode menu bar along the top of the screen)
+					- You should get the output into the terminal, as shown above in method 1
 ## All Dependencies:
 - All imported modules:
 	os (built-in)
