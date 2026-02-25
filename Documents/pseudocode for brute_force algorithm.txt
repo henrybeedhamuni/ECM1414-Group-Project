@@ -9,7 +9,7 @@ Function brute_force_planner(activities, max_time, budget):
 	if max_length > n then
 		max_length = number of activities
 
-	best_solution = [0 , 0, 0, 0] #empty array of zeros
+	best_solution = [0 , 0, 0, 0] #empty list of zeros
 
 	for length in the range of max_length to 0:
 		for each combination of ids of size length:
@@ -23,3 +23,6 @@ Function brute_force_planner(activities, max_time, budget):
 	return best_solution
 
 End function
+
+
+X
