@@ -2,7 +2,6 @@ import os
 import sys
 import time
 from typing import List, Tuple
-import time
 
 from Classes.Activity import Activity
 from utils.read_input_file import read_input_file
